@@ -1,0 +1,19 @@
+{
+  "name": "mmm-qbittorrent",
+  "version": "1.0.0",
+  "description": "Qbittorrent integration for Magic Mirror Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathieuGery/MMM-Qbittorrent.git"
+  },
+  "author": "https://github.com/MathieuGery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MathieuGery/MMM-Qbittorrent/issues"
+  },
+  "homepage": "https://github.com/MathieuGery/MMM-Qbittorrent#readme"
+}
