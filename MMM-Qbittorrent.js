@@ -8,9 +8,11 @@
 
 Module.register('MMM-qBittorrent', {
   defaults: {
-    uploadSpeed: 0,
-    downloadSpeed: 0,
-    ratio: 0
+    showUploadSpeed: true,
+    showDownloadSpeed: true,
+    showRatio: true,
+    showLeftSpace: true,
+    fetchInterval: 1 * 60 * 1000 //fetch interval default every minutes
   },
 
   getStyles: function() {
@@ -31,9 +33,10 @@ Module.register('MMM-qBittorrent', {
 
     let headerRow = document.createElement('tr');
 		headerRow.className = 'normal header-row';
-		this.createTableCell(headerRow, this.translate('RATIO'), true, 'ratio-header', 'center');
-		this.createTableCell(headerRow, this.translate('DOWNLOAD_SPEED'), true, 'download-speed-header', 'center');
-		this.createTableCell(headerRow, this.translate('UPLOAD_SPEED'), true, 'upload-speed-header', 'center');
+		this.createTableCell(headerRow, this.translate('RATIO'), this.config.showRatio, 'ratio-header', 'center');
+		this.createTableCell(headerRow, this.translate('DOWNLOAD_SPEED'), this.config.showDownloadSpeed, 'download-speed-header', 'center');
+		this.createTableCell(headerRow, this.translate('UPLOAD_SPEED'), this.config.showUploadSpeed, 'upload-speed-header', 'center');
+		this.createTableCell(headerRow, this.translate('LEFT_SPACE'), this.config.showLeftSpace, 'left-space-header', 'center');
 
     wrapper.appendChild(headerRow);
     return wrapper
