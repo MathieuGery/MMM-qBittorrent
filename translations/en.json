@@ -1,6 +1,6 @@
 {
 	"LOADING": "Loading...",
-	"UPLOAD_SPEED": "Upload Speed",
-	"DOWNLOAD_SPEED": "Download Speed",
+	"UPLOAD_SPEED": "<i class=\"fas fa-arrow-up\"><\/i>",
+	"DOWNLOAD_SPEED": "<i class=\"fas fa-arrow-down\"><\/i>",
 	"RATIO": "Ratio"
 }
