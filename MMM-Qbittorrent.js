@@ -1,3 +1,11 @@
+/* Magic Mirror
+ * Module: MMM-qBittorrent
+ *
+ * By Mathieu Gery, https://github.com/MathieuGery/MMM-qBittorrent
+ * MIT Licensed.
+ */
+
+
 Module.register('MMM-qBittorrent', {
   defaults: {
     uploadSpeed: 0,
