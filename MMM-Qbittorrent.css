@@ -1,0 +1,12 @@
+.MMM-qBittorrent td {
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.MMM-qBittorrent .header-row {
+	font-weight: bold;
+}
+
+.MMM-qBittorrent .stats-row {
+	color: #fff;
+}
