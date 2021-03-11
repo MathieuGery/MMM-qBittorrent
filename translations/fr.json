@@ -2,5 +2,6 @@
 	"LOADING": "Chargement...",
 	"UPLOAD_SPEED": "<i class=\"fas fa-arrow-up\"><\/i>",
 	"DOWNLOAD_SPEED": "<i class=\"fas fa-arrow-down\"><\/i>",
+	"LEFT_SPACE": "<i class=\"fas fa-hdd\"><\/i>",
 	"RATIO": "Ratio"
 }
