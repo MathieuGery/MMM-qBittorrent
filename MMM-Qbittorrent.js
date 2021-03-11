@@ -22,7 +22,7 @@ Module.register('MMM-qBittorrent', {
   getTranslations: function () {
 		return {
 			en: 'translations/en.json',
-			sv: 'translations/sv.json'
+			sv: 'translations/fr.json'
 		}
 	},
 

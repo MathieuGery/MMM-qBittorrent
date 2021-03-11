@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MathieuGery/MMM-Qbittorrent/issues"
   },
-  "homepage": "https://github.com/MathieuGery/MMM-Qbittorrent#readme"
+  "homepage": "https://github.com/MathieuGery/MMM-Qbittorrent#readme",
+  "dependencies": {
+    "qbittorrent-api-v2": "^1.2.2"
+  }
 }
