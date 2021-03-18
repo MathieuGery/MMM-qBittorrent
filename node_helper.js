@@ -13,8 +13,8 @@ module.exports = NodeHelper.create({
 		//console.log('Starting node_helper for: ' + this.name);
 	},
 
-	callQb: function (options) {
-		return qbApi.connect(options.qbUrl, options.qbUser, options.qbPassword)
+	callQb: function (payload) {
+		return qbApi.connect(payload.qbUrl, payload.username, payload.password)
 			.then(qbt => {
 				return qbt.transferInfo()
 					.then(torrents => {
@@ -32,12 +32,8 @@ module.exports = NodeHelper.create({
 	getStats: function (payload) {
 		let identifier = payload.identifier;
 		let promises = [];
-		let options = {
-			qbUrl: 'http://vpn.gideon.ovh:8080',
-			qbUser: 'gideon',
-			qbPassword: 'M76hLq3zG'
-		}
-		promises.push(this.callQb(options));
+
+		promises.push(this.callQb(payload));
 		Promise.all(promises).then((contents) => {
 			let res = contents[0];
 			let stats = {

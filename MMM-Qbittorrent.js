@@ -12,9 +12,10 @@ Module.register('MMM-qBittorrent', {
 		showDownloadSpeed: true,
 		showRatio: true,
 		showLeftSpace: true,
-		apiToken: "maeokafoqoisjeifjqiosjeif",
+		username: "username",
+		password: "password",
 		qbUrl: "localhost",
-		fetchInterval: 1 * 60 * 1000 //fetch interval default every minutes
+		fetchInterval: 10 * 60 * 1000 //fetch interval default every minutes
 	},
 
 	getStyles: function () {
@@ -92,7 +93,8 @@ Module.register('MMM-qBittorrent', {
 		// Tell node_helper to load stats at startup.
 		this.sendSocketNotification('GET_STATS', {
 			identifier: this.identifier,
-			apiToken: this.config.apiToken,
+			username: this.config.username,
+			password: this.config.password,
 			qbUrl: this.config.qbUrl
 		});
 		let interval = Math.max(this.config.fetchInterval, 1000);
