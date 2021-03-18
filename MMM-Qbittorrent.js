@@ -14,7 +14,7 @@ Module.register('MMM-qBittorrent', {
 		showLeftSpace: true,
 		username: "username",
 		password: "password",
-		qbUrl: "localhost",
+		qbUrl: "http://localhost",
 		fetchInterval: 10 * 60 * 1000 //fetch interval default every minutes
 	},
 
