@@ -63,7 +63,7 @@ Module.register('MMM-qBittorrent', {
 	},
 
 	createNumberTableCell: function (row, number, show, className) {
-		if (!show)
+		if (show == false)
 			return;
 
 		const text = new Intl.NumberFormat().format(number);
@@ -75,7 +75,7 @@ Module.register('MMM-qBittorrent', {
 	// @param show - Whether to actually show.
 	// @param align - Text align: 'left', 'center' or 'right'.
 	createTableCell: function (row, text, show, className, align = 'right') {
-		if (!show)
+		if (show === false)
 			return;
 
 		let cell = document.createElement('td');
